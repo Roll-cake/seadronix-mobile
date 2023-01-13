@@ -1,0 +1,25 @@
+@mixin longShadow($limit: 30, $color: rgba(0, 0, 0, 1)) {
+  // 디폴트 값이 30이라 30번 반복
+  //함수
+  //1px 1px 공백
+  $shadow: "";
+  @for $i from 1 to $limit {
+    //@for $i from 1 to 100
+    // 1~100까지 반복하겠다.
+    $shadow: $shadow + $i + "px " + $i + "px 0px " + $color + ",";
+  }
+  $shadow: $shadow + $limit + "px " + $limit + "px 0px " + $color;
+  $shadow: unquote($shadow);
+  text-shadow: $shadow;
+}
+@mixin center() {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@mixin icon($code, $margin: 10px) {
+  display: inline-block;
+  content: $code;
+  margin-left: $margin;
+  font-family: "Material Icons";
+}

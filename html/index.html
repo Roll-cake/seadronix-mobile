@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0,minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
+    <!-- 카톡에 페이지 링크 보내면 나오는 배너 -->
+    <!-- prettier-igonre -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="http://www.dauum.net" />
+    <meta property="og:title" content="seadronix" />
+    <meta property="og:site_name" content="seadronix" />
+    <meta property="og:description" content="해양강국을 꿈꾸는" />
+    <meta
+      property="og:image"
+      content="../image/layout/main-overview-logo.jpg"
+    />
+    <title>Seadronix AI Autonomous ship</title>
+    <!-- prettier-ignore -->
+    <link rel="shortcut icon" href="../image/laylout/favicon.png" type="image/x-icon"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <!-- prettier-ignore -->
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap" rel="stylesheet"/>
+    <!-- 구글 lato -->
+    <!-- prettier-ignore -->
+    <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.6/dist/web/static/pretendard.css"/>
+    <!-- 눈누 깃허브 -->
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <!-- 아이콘  -->
+    <link rel="stylesheet" href="../css/reset.css" />
+    <!-- 화면에 보이는 모든 효과 사라짐 (li,font-weigt..) -->
+
+    <link rel="stylesheet" href="../css/swiper-bundle.min.css" />
+    <!-- 스와이프 -->
+    <link rel="stylesheet" href="../css/aos.css" />
+    <!-- 효과 -->
+    <link rel="stylesheet" href="../css/layout.css" />
+    <link rel="stylesheet" href="../css/main.css" />
+    <link rel="stylesheet" href="../css/commnd.css" />
+    <!-- css 파일 -->
+    <script src="../js/aos.js"></script>
+    <script src="../js/swiper-bundle.min.js"></script>
+    <script src="../js/main.js" defer></script>
+  </head>
+  <body>
+    <header class="header">
+      <h1 class="logo">
+        <!-- prettier-ignore -->
+        <a href="">
+          <img src="../image/laylout/logo-dark.svg" alt="" class="logo__img--dark" />
+          <img src="../image/laylout/logo-light.svg" alt=""  class="logo__img--light" />
+          <!-- 0106수정 -->
+        </a>
+      </h1>
+      <nav class="gnb">
+        <!-- section article nav aside 화면에 나오면 안되지만 제목을 써야된다. -> div태그로 교체 -->
+        <h2 class="hidden">global navigation</h2>
+        <ul class="list">
+          <li>
+            <a href="">COMPANY</a>
+            <ul class="depth02">
+              <li><a href="">vision</a></li>
+              <li><a href="">leader ship</a></li>
+              <li><a href="">partners</a></li>
+              <li><a href="">history</a></li>
+              <li><a href="">certificates</a></li>
+            </ul>
+          </li>
+          <li><a href="">TECHNOLOGY</a></li>
+          <li><a href="">PRODUCT</a></li>
+          <li><a href="">press</a></li>
+          <li><a href="">CAREER</a></li>
+          <li><a href="">CONTACT</a></li>
+        </ul>
+      </nav>
+      <div class="language">
+        <a href="" class="active">KO</a>
+        <a href="">EN</a>
+      </div>
+      <button class="btn btn--all">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </header>
+    <!-- bem (block__element--modifier) -->
+    <main class="main">
+      <section class="visual">
+        <!-- 블럭기준은 언던바 2개 __ -->
+        <h2 class="hidden">main video</h2>
+        <!-- prettier-ignore -->
+        <!-- <video
+          src="../image/video/video.mp4"
+          autoplay
+          loop
+          muted
+          class="visual__video"
+        ></video>-->
+
+        <!-- 스와이퍼 ~ -->
+        <div class="visual__list">
+          <ul class="swiper-wrapper">
+            <li class="visual01 swiper-slide"></li>
+            <li class="visual02 swiper-slide"></li>
+            <li class="visual03 swiper-slide"></li>
+          </ul>
+        </div>
+        <!-- ~ 스와이퍼 ~-->
+        <div class="visual__txt">
+          <h3
+            data-aos="fade-right"
+            data-aos-duration="1000"
+            data-aos-delay="300"
+          >
+            port-to-port <br />
+            ai platform company
+          </h3>
+          <p
+            data-aos="fade-right"
+            data-aos-duration="1000"
+            data-aos-delay="600"
+          >
+            선박과 항만의 연결, 그리고 자율운항선박이 나아갈 길을<br />
+            씨드로닉스는 Data-driven solution으로 이끌어 갑니다.
+          </p>
+          <p
+            data-aos="fade-right"
+            data-aos-duration="1000"
+            data-aos-delay="900"
+          >
+            해양 환경의 안전과 미래를 책임질 씨드로닉스와 함께 미래를
+            준비하세요.
+          </p>
+        </div>
+      </section>
+      <!-- visual end -->
+      <section class="about section">
+        <!-- 그림과 텍스트로 div 분리 / 자식이 2개-->
+        <!-- 이미지 크기 수정때문에 클래스 이름 section 으로 바꿈 -->
+        <div class="container">
+          <div class="about__txt" data-aos="fade-up">
+            <h2>
+              <strong>인공지능 기술</strong>을 통해<br />
+              <strong>해양물류의 혁신</strong>을 이끌어 나갑니다.
+            </h2>
+            <p>
+              선박의 자율운항, 운항 보조 시스템, 선박 모니터리 시스템 등<br />
+              해양 환경의 안전과 미래를 책임질 기술을 개발하고, 제품을
+              만들어갑니다.
+            </p>
+            <!--prettier-ignore-->
+            <a href="" class="btn">더 알아보기<span class="material-icons"> arrow_forward_ios</span></a>
+          </div>
+          <div class="about__img" data-aos="fade-left" data-aos-delay="500">
+            <img src="../image/main/main-overview-logo-1.jpg" alt="" />
+          </div>
+        </div>
+      </section>
+      <!-- about end -->
+      <section class="products section gray">
+        <!-- section 이유 확인 -->
+        <div class="container">
+          <div class="products-title" data-aos="fade-up">
+            <h2>Our Products</h2>
+            <p>
+              선박과 항만을 <strong>유기적인 관계</strong>로 기획하고,<strong
+                >제품을 구현</strong
+              >합니다.
+            </p>
+          </div>
+          <div class="products-banner">
+            <a href="" data-aos="fade-up" data-aos-delay="1000">
+              <div class="products-banner__title">
+                <h3>aviss</h3>
+                <p>항만분야</p>
+              </div>
+              <img src="../image/main/main-aviss.jpg" alt="" />
+              <span class="material-icons more"> add_circle </span></a
+            >
+            <a href="" data-aos="fade-up" data-aos-delay="1200">
+              <div class="products-banner__title">
+                <h3>naviss</h3>
+                <p>선박분야</p>
+              </div>
+              <img src="../image/main/main-naviss.jpg" alt="" />
+              <span class="material-icons more"> add_circle </span></a
+            >
+          </div>
+        </div>
+      </section>
+      <!-- products end-->
+      <section class="section banner" data-aos="fade">
+        <!-- fade 제자리에서 천천히 올라온다 -->
+        <div class="container">
+          <h2>
+            <strong>
+              씨드로닉스의 해양물류의 혁신이 궁금하신가요?<br />
+              언제든지 연락주세요.
+            </strong>
+          </h2>
+          <!--prettier-ignore-->
+          <a href="" class="btn btn---white">문의하기<span class="material-icons"> arrow_forward_ios</span></a>
+        </div>
+      </section>
+      <!-- banner end -->
+      <section class="section tech">
+        <div class="container">
+          <div class="tech-title tech-item">
+            <div class="aos" data-aos="fade-up">
+              <h2><strong>Our Technology</strong></h2>
+            </div>
+            <div class="aos2" data-aos="fade-up">
+              <p>
+                <strong>선박의 운항, 경험</strong>을 넘어<br />
+                과학으로 이끌 인공지능 기술을 연구합니다.
+              </p>
+              <!--prettier-ignore-->
+              <a href="" class="btn">더 알아보기<span class="material-icons">arrow_forward_ios</span ></a>
+            </div>
+          </div>
+          <div
+            class="tech-banner tech-item"
+            data-aos="fade-left"
+            data-aos-delay="200"
+          >
+            <a href="">
+              <div class="tech-banner__title">
+                <h3><strong>Al</strong></h3>
+                <p>
+                  해양 환경에 특화된 인공지능 기술은<br />
+                  작은 부표부터 큰 선박까지<br />
+                  바다 위에 존재하는 객체를 인식하고 분류합니다.
+                </p>
+              </div>
+              <img src="../image/main/main-ai_re.jpg" alt="" />
+              <span class="material-icons more"> add_circle </span>
+            </a>
+          </div>
+          <div
+            class="tech-banner tech-item"
+            data-aos="fade-left"
+            data-aos-delay="400"
+          >
+            <a href="">
+              <div class="tech-banner__title">
+                <h3><strong>Sensor Fusin</strong></h3>
+                <p>
+                  Radar, LiDAR 등의 센서 데이터를 <br />
+                  vision 데이터와 융합하여 <br />최상의 결과를 도출해냅니다.
+                </p>
+              </div>
+              <img src="../image/main/main-sensor-fusion_re.jpg" alt="" />
+              <span class="material-icons more"> add_circle </span>
+            </a>
+          </div>
+        </div>
+      </section>
+      <!-- tech end -->
+      <section class="section investors">
+        <div class="container">
+          <h2>Our Investors</h2>
+          <!-- prettier-ignore -->
+          <ul class="investors__list">
+            <li><a href=""><img src="../image/main/investor1.png" alt="" /></a></li>
+            <li><a href=""><img src="../image/main/investor2.png" alt="" /></a></li>
+            <li><a href=""><img src="../image/main/investor3.png" alt="" /></a> </li>
+            <li><a href=""><img src="../image/main/investor4.png" alt="" /></a></li>
+            <li><a href=""><img src="../image/main/investor7.png" alt="" /></a></li>
+            <li><a href=""><img src="../image/main/investor6.png" alt="" /></a></li>
+            <li><a href=""><img src="../image/main/investor5.png" alt="" /></a></li>
+          </ul>
+        </div>
+      </section>
+      <!-- investor end- -->
+      <section class="section news">
+        <div class="container">
+          <div class="news-title">
+            <h2><strong>Recent News</strong></h2>
+            <!--prettier-ignore-->
+            <a href="" class="btn">전체보기<span class="material-icons"> arrow_forward_ios</span></a >
+          </div>
+          <div class="news-banner">
+            <ul class="news-banner__list swiper-wrapper">
+              <!-- 스와이프 쓰기위해서 클래스 필수 -->
+              <!-- 이미지에 글 올리고 다른 글자 키우기 위해서 클래스 -->
+              <li class="swiper-slide">
+                <!-- 스와이프 쓰기위해서 클래스 필수-->
+                <a href="">
+                  <div class="news__img">
+                    <img src="https://picsum.photos/id/1/450/300" alt="" />
+                    <!-- 랜덤으로 이미지 바뀌게 해줌 / 뒤에 숫자로 크기 조절
+                  앞에 id 번호를 붙여준다 -->
+                    <span class="sticker">전자신문(출처)</span>
+                  </div>
+                  <div class="news__txt">
+                    <h3>
+                      Singapore’s Smart Port Challenge announces 2022 start-up
+                      winners
+                    </h3>
+                    <p class="date">2022-03-02</p>
+                  </div>
+                </a>
+              </li>
+              <li class="swiper-slide">
+                <a href="">
+                  <div class="news__img">
+                    <img src="https://picsum.photos/id/2/450/300" alt="" />
+                    <!-- 랜덤으로 이미지 바뀌게 해줌 / 뒤에 숫자로 크기 조절 -->
+                    <span class="sticker">전자신문(출처)</span>
+                  </div>
+                  <div class="news__txt">
+                    <h3>
+                      Singapore’s Smart Port Challenge announces 2022 start-up
+                      winners
+                    </h3>
+                    <p class="date">2022-03-02</p>
+                  </div>
+                </a>
+              </li>
+              <li class="swiper-slide">
+                <a href="">
+                  <div class="news__img">
+                    <img src="https://picsum.photos/id/3/450/300" alt="" />
+                    <!-- 랜덤으로 이미지 바뀌게 해줌 / 뒤에 숫자로 크기 조절 -->
+                    <span class="sticker">전자신문(출처)</span>
+                  </div>
+                  <div class="news__txt">
+                    <h3>
+                      Singapore’s Smart Port Challenge announces 2022 start-up
+                      winners
+                    </h3>
+                    <p class="date">2022-03-02</p>
+                  </div>
+                </a>
+              </li>
+              <li class="swiper-slide">
+                <a href="">
+                  <div class="news__img">
+                    <img src="https://picsum.photos/id/4/450/300" alt="" />
+                    <!-- 랜덤으로 이미지 바뀌게 해줌 / 뒤에 숫자로 크기 조절 -->
+                    <span class="sticker">전자신문(출처)</span>
+                  </div>
+                  <div class="news__txt">
+                    <h3>
+                      Singapore’s Smart Port Challenge announces 2022 start-up
+                      winners
+                    </h3>
+                    <p class="date">2022-03-02</p>
+                  </div>
+                </a>
+              </li>
+              <li class="swiper-slide">
+                <a href="">
+                  <div class="news__img">
+                    <img src="https://picsum.photos/id/5/450/300" alt="" />
+                    <!-- 랜덤으로 이미지 바뀌게 해줌 / 뒤에 숫자로 크기 조절 -->
+                    <span class="sticker">전자신문(출처)</span>
+                  </div>
+                  <div class="news__txt">
+                    <h3>
+                      Singapore’s Smart Port Challenge announces 2022 start-up
+                      winners
+                    </h3>
+                    <p class="date">2022-03-02</p>
+                  </div>
+                </a>
+              </li>
+              <li class="swiper-slide">
+                <a href="">
+                  <div class="news__img">
+                    <img src="https://picsum.photos/id/6/450/300" alt="" />
+                    <!-- 랜덤으로 이미지 바뀌게 해줌 / 뒤에 숫자로 크기 조절 -->
+                    <span class="sticker">전자신문(출처)</span>
+                  </div>
+                  <div class="news__txt">
+                    <h3>
+                      Singapore’s Smart Port Challenge announces 2022 start-up
+                      winners
+                    </h3>
+                    <p class="date">2022-03-02</p>
+                  </div>
+                </a>
+              </li>
+              <li class="swiper-slide">
+                <a href="">
+                  <div class="news__img">
+                    <img src="https://picsum.photos/id/7/450/300" alt="" />
+                    <!-- 랜덤으로 이미지 바뀌게 해줌 / 뒤에 숫자로 크기 조절 -->
+                    <span class="sticker">전자신문(출처)</span>
+                  </div>
+                  <div class="news__txt">
+                    <h3>
+                      Singapore’s Smart Port Challenge announces 2022 start-up
+                      winners
+                    </h3>
+                    <p class="date">2022-03-02</p>
+                  </div>
+                </a>
+              </li>
+            </ul>
+            <button class="btn btn--round btn--fixed btn--next">
+              <!-- 같은데 효과가 조금 다르면 -- 2개 -->
+              <span class="material-icons">arrow_forward</span>
+            </button>
+            <button class="btn btn--round btn--fixed btn--prev">
+              <!-- 같은데 효과가 조금 다르면 -- 2개 -->
+              <!-- 안움직이게 하고싶다 클래스 -->
+              <span class="material-icons">arrow_back</span>
+            </button>
+            <!-- 뉴스 버튼 만듦 -->
+          </div>
+        </div>
+      </section>
+    </main>
+    <!-- mani end -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-items">
+          <div class="footer__item">
+            <img
+              src="../image/laylout/logo-light.svg"
+              alt=""
+              class="footer-logo"
+            />
+          </div>
+          <div class="footer__item">
+            <h2>office</h2>
+            <!-- 정의할때 a는 b -->
+            <dl>
+              <dt>본사</dt>
+              <dd>울산광역시 남구 매암로28, 201호</dd>
+            </dl>
+            <dl>
+              <dt>연구소</dt>
+              <dd>서울특별시 강남구 테헤란로20길 20, 3층</dd>
+            </dl>
+            <dl>
+              <dt>공장</dt>
+              <dd>서울특별시 성동구 광나루로 144, 707호</dd>
+            </dl>
+          </div>
+          <div class="footer__item">
+            <h2>Contact Us</h2>
+            <dl>
+              <dt>일반 문의</dt>
+              <dd>contact@seadronix.com</dd>
+            </dl>
+          </div>
+          <div class="footer__item">
+            <h2>제품 문의하기</h2>
+          </div>
+        </div>
+        <div class="footer-copyright">
+          <p>ⓒ 2022 Seadronix Inc. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+    <!-- 아이콘 -->
+    <button class="btn-top">
+      <span class="material-icons">north</span>
+    </button>
+
+    <script></script>
+  </body>
+</html>

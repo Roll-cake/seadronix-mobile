@@ -1,0 +1,38 @@
+@import "vars";
+@import "mixins";
+.visual__list {
+  width: 100%;
+  height: 100vh;
+  li {
+    height: 100vh;
+    width: 100%;
+    background-size: cover;
+    background-position: 50%; //가운데로
+    &.visual01 {
+      background-image: url(../image/main/1.jpg);
+    }
+    &.visual02 {
+      background-image: url(../image/main/2.jpg);
+    }
+    &.visual03 {
+      background-image: url(../image/main/3.jpg);
+    }
+  }
+  .pagination {
+    position: absolute;
+    bottom: 30px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    z-index: 3;
+    .swiper-pagination-bullet {
+      opacity: 1;
+      width: 12px;
+      height: 12px;
+      background-color: fff;
+      &-active {
+        background-color: $blue;
+      }
+    }
+  }
+}
